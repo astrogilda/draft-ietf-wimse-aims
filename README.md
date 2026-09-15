@@ -1,14 +1,13 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# Agent-to-Agent Authentication and Authorization
+# AI Identity Management System
 
-This is the working area for the individual Internet-Draft, "Agent-to-Agent Authentication and Authorization".
+This is the working area for the IETF [WIMSE Working Group](https://datatracker.ietf.org/wg/wimse/documents/) Internet-Draft, "AI Identity Management System".
 
-* [Editor's Copies](https://PieterKas.github.io/agent2agent-auth-framework/)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-klrc-aiagent-auth)
-* [Compare Editor's Copy to Individual Draft](https://PieterKas.github.io/agent2agent-auth-framework/#go.draft-klrc-aiagent-auth.diff)
-
+* [Editor's Copy](https://ietf-wg-wimse.github.io/draft-ietf-wimse-aims/#go.draft-ietf-wimse-aims.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-wimse-aims)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-wimse-aims)
+* [Compare Editor's Copy to Working Group Draft](https://ietf-wg-wimse.github.io/draft-ietf-wimse-aims/#go.draft-ietf-wimse-aims.diff)
 
 ## Contributing
 
