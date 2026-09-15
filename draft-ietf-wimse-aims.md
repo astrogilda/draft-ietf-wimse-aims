@@ -1,16 +1,16 @@
 ---
-title: "AI Agent Authentication and Authorization"
-abbrev: "AI-Auth"
+title: "AI Identity Management System"
+abbrev: "AIMS"
 category: info
 
-docname: draft-klrc-aiagent-auth-latest
+docname: draft-ietf-wimse-aims-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus: true
 v: 3
 # area: AREA
-# workgroup: WG Working Group
+workgroup: WIMSE
 keyword:
  - OAuth
  - WIMSE
@@ -18,12 +18,12 @@ keyword:
  - Secure Signals Framework
  - AI Agent Authentication and Authorization
 venue:
-#  group: WG
-#  type: Working Group
-#  mail: WG@example.com
-#  arch: https://example.com/WG
-  github: "PieterKas/agent2agent-auth-framework"
-  latest: "https://PieterKas.github.io/agent2agent-auth-framework/draft-klrc-aiagent-auth.html"
+  group: WIMSE
+  type: Working Group
+  mail: wimse@ietf.org
+  arch: https://mailarchive.ietf.org/arch/browse/wimse/
+  github: "ietf-wg-wimse/draft-ietf-wimse-aims"
+  latest: "https://ietf-wg-wimse.github.io/draft-ietf-wimse-aims/draft-ietf-wimse-aims.html"
 
 author:
  -
