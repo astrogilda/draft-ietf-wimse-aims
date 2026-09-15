@@ -2,10 +2,10 @@
 
 
 
-Network Working Group                                       P. Kasselman
+WIMSE                                                       P. Kasselman
 Internet-Draft                                          Defakto Security
 Intended status: Informational                               J. Lombardo
-Expires: 7 January 2027                                              AWS
+Expires: 19 March 2027                                               AWS
                                                             Y. Rosomakho
                                                                  Zscaler
                                                              B. Campbell
@@ -14,11 +14,11 @@ Expires: 7 January 2027                                              AWS
                                                                   OpenAI
                                                               A. Parecki
                                                                     Okta
-                                                             6 July 2026
+                                                       15 September 2026
 
 
-               AI Agent Authentication and Authorization
-                     draft-klrc-aiagent-auth-latest
+                     AI Identity Management System
+                      draft-ietf-wimse-aims-latest
 
 Abstract
 
@@ -37,13 +37,18 @@ About This Document
 
    This note is to be removed before publishing as an RFC.
 
-   The latest revision of this draft can be found at
-   https://PieterKas.github.io/agent2agent-auth-framework/draft-klrc-
-   aiagent-auth.html.  Status information for this document may be found
-   at https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/.
+   The latest revision of this draft can be found at https://ietf-wg-
+   wimse.github.io/draft-ietf-wimse-aims/draft-ietf-wimse-aims.html.
+   Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/.
+
+   Discussion of this document takes place on the WIMSE Working Group
+   mailing list (mailto:wimse@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/wimse/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/wimse/.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/PieterKas/agent2agent-auth-framework.
+   https://github.com/ietf-wg-wimse/draft-ietf-wimse-aims.
 
 Status of This Memo
 
@@ -60,7 +65,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 January 2027.
+   This Internet-Draft will expire on 19 March 2027.
 
 Copyright Notice
 
@@ -1087,9 +1092,9 @@ Table of Contents
    [OAUTH-CLIENT-METADATA]
               Parecki, A. and E. Smith, "OAuth Client ID Metadata
               Document", Work in Progress, Internet-Draft, draft-ietf-
-              oauth-client-id-metadata-document-01, 1 March 2026,
+              oauth-client-id-metadata-document-02, 6 July 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-
-              client-id-metadata-document-01>.
+              client-id-metadata-document-02>.
 
    [OAUTH-CLIENTAUTH-JWT]
               Jones, M., Campbell, B., and C. Mortimore, "JSON Web Token
@@ -1113,9 +1118,9 @@ Table of Contents
               Schwenkschuster, A., Kasselman, P., Burgin, K., Jenkins,
               M. J., Campbell, B., and A. Parecki, "OAuth Identity and
               Authorization Chaining Across Domains", Work in Progress,
-              Internet-Draft, draft-ietf-oauth-identity-chaining-16, 26
-              June 2026, <https://datatracker.ietf.org/doc/html/draft-
-              ietf-oauth-identity-chaining-16>.
+              Internet-Draft, draft-ietf-oauth-identity-chaining-17, 19
+              July 2026, <https://datatracker.ietf.org/doc/html/draft-
+              ietf-oauth-identity-chaining-17>.
 
    [OAUTH-JWT-ASSERTION]
               Parecki, A., McGuinness, K., and B. Campbell, "Identity
@@ -1166,16 +1171,16 @@ Table of Contents
               Fletcher, G., Kasselman, P., and S. O'Dell, "Transaction
               Token Authorization Grant Profile for OAuth Identity and
               Authorization Chaining", Work in Progress, Internet-Draft,
-              draft-fletcher-transaction-token-chaining-profile-01, 20
-              June 2026, <https://datatracker.ietf.org/doc/html/draft-
-              fletcher-transaction-token-chaining-profile-01>.
+              draft-fletcher-transaction-token-chaining-profile-02, 6
+              July 2026, <https://datatracker.ietf.org/doc/html/draft-
+              fletcher-transaction-token-chaining-profile-02>.
 
    [OAUTH-TXN-TOKENS]
               Tulshibagwale, A., Fletcher, G., and P. Kasselman,
               "Transaction Tokens", Work in Progress, Internet-Draft,
-              draft-ietf-oauth-transaction-tokens-08, 2 March 2026,
+              draft-ietf-oauth-transaction-tokens-11, 30 July 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-
-              transaction-tokens-08>.
+              transaction-tokens-11>.
 
    [OpenIDConnect.AuthZEN]
               Gazitt, O., Ed., Brossard, D., Ed., and A. Tulshibagwale,
@@ -1242,9 +1247,9 @@ Table of Contents
               Salowey, J. A., Rosomakho, Y., and H. Tschofenig,
               "Workload Identity in a Multi System Environment (WIMSE)
               Architecture", Work in Progress, Internet-Draft, draft-
-              ietf-wimse-arch-07, 2 March 2026,
+              ietf-wimse-arch-08, 6 July 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-wimse-
-              arch-07>.
+              arch-08>.
 
    [WIMSE-CRED]
               Campbell, B., Salowey, J. A., Schwenkschuster, A.,
@@ -1257,22 +1262,22 @@ Table of Contents
    [WIMSE-HTTPSIG]
               Salowey, J. A. and Y. Sheffer, "WIMSE Workload-to-Workload
               Authentication with HTTP Signatures", Work in Progress,
-              Internet-Draft, draft-ietf-wimse-http-signature-03, 7
-              April 2026, <https://datatracker.ietf.org/doc/html/draft-
-              ietf-wimse-http-signature-03>.
+              Internet-Draft, draft-ietf-wimse-http-signature-06, 4
+              August 2026, <https://datatracker.ietf.org/doc/html/draft-
+              ietf-wimse-http-signature-06>.
 
    [WIMSE-ID] Rosomakho, Y. and J. A. Salowey, "Workload Identifier",
               Work in Progress, Internet-Draft, draft-ietf-wimse-
-              identifier-02, 2 March 2026,
+              identifier-03, 6 July 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-wimse-
-              identifier-02>.
+              identifier-03>.
 
    [WIMSE-WPT]
               Campbell, B. and A. Schwenkschuster, "WIMSE Workload Proof
               Token", Work in Progress, Internet-Draft, draft-ietf-
-              wimse-wpt-01, 2 March 2026,
+              wimse-wpt-02, 27 August 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-wimse-
-              wpt-01>.
+              wpt-02>.
 
 18.2.  Informative References
 
