@@ -433,11 +433,14 @@ The authors would like to thank:
 
 * Sean O'Dell for providing valuable input and feedback on this work.
 * Karl McGuinness for his blog posts on mission shaping as a pre-cursor to authorization {{MissionShaping}}
+* Joe DeCock for his feedback on the token introspection section.
 
 --- back
 
 # Document History
    \[\[ To be removed from the final specification ]]
+  -04
+   * Refine langugage about token introspection, acknowlegdge Joseph DeKock for pointing out the need to do so (https://github.com/ietf-wg-wimse/draft-ietf-wimse-aims/issues/151)  
   -03
 
    * Editorial updates
