@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-09-20T03:53:29.361573+00:00",
+  "timestamp": "2026-09-22T03:47:41.723240+00:00",
   "repo": "ietf-wg-wimse/draft-ietf-wimse-aims",
   "labels": [
     {
@@ -2634,6 +2634,22 @@
       "body": "Originally reported in https://mailarchive.ietf.org/arch/msg/wimse/XPbMV0LHjLynkbGfHMKNMFFa1Ro/.\n\n> AI workloads, especially AI coding agents, often go in YOLO mode, have root access to download, install and run software (say hi to supply chain attacks), start other containers, or start other microVMs (they are free to do all of that in their sandboxes). They also aren't deterministic, their brains are LLM providers, or local LLMs that make decisions. AI agent harnesses can switch these \"brains\" on the fly and / or use \u201cmultiple\u201d brains depending on the task at hand.\n\nTherefore, I firmly believe that the specifications / draft should include this following text \u201ccryptographic material in credentials MUST NOT be directly accessible to an agent or model\u201d.",
       "createdAt": "2026-09-16T23:47:49Z",
       "updatedAt": "2026-09-16T23:47:49Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 151,
+      "id": "I_kwDOQP22qc8AAAABSYIlBw",
+      "title": "Restructure section on token introspection",
+      "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-aims/issues/151",
+      "state": "OPEN",
+      "author": "PieterKas",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The text describing token introspection can be better presented (see https://lnkd.in/p/dRe2S7Cn)",
+      "createdAt": "2026-09-21T14:20:00Z",
+      "updatedAt": "2026-09-21T14:20:00Z",
       "closedAt": null,
       "comments": []
     }
@@ -6421,6 +6437,32 @@
       "mergeCommit": {
         "oid": "bfff2ebf382eb0e8de156ee1e818c84c5f8c0ba2"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 152,
+      "id": "PR_kwDOQP22qc8AAAABEbymWg",
+      "title": "Enhance OAuth 2.0 access token description and introspection",
+      "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-aims/pull/152",
+      "state": "OPEN",
+      "author": "PieterKas",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Clarified the use of OAuth 2.0 Token Introspection and its role in validating opaque tokens, ensuring the framework supports various token formats while maintaining authorization semantics. See issue #151",
+      "createdAt": "2026-09-21T14:20:48Z",
+      "updatedAt": "2026-09-21T14:28:09Z",
+      "baseRepository": "ietf-wg-wimse/draft-ietf-wimse-aims",
+      "baseRefName": "main",
+      "baseRefOid": "bfff2ebf382eb0e8de156ee1e818c84c5f8c0ba2",
+      "headRepository": "ietf-wg-wimse/draft-ietf-wimse-aims",
+      "headRefName": "PieterKas-patch-25",
+      "headRefOid": "050ba47006c0331bf2d262dbb2000c1d8cb12d3a",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
